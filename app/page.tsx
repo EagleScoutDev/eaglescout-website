@@ -8,16 +8,18 @@ import { Footer } from '@/app/components/Footer';
 import { UnderstandDataSection } from '@/app/sections/UnderstandDataSection';
 
 export default function Home() {
-  return (
-      <div className="min-h-screen bg-black text-white bg-grid-8-s-2-neutral-950">
-          <Navbar />
-          <Hero />
-          <FeaturesSection />
-          <StatsSection />
-          <MobileFirstSection />
-          <UnderstandDataSection />
-          <DownloadSection />
-          <Footer />
-      </div>
-  )
+    return (
+        <div className="min-h-screen bg-black text-white">
+            <div className="bg-dot-8-s-2-neutral-950">
+                <Navbar/>
+                <Hero/>
+            </div>
+            <FeaturesSection/>
+            <StatsSection/>
+            <MobileFirstSection/>
+            <UnderstandDataSection/>
+            <DownloadSection/>
+            <Footer/>
+        </div>
+    );
 }
