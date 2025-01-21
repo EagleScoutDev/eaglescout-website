@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { SectionFeature } from '@/app/components/SectionFeature';
-import { BrainCog } from 'lucide-react';
+import { BrainCog, Hourglass } from 'lucide-react';
 import { titilliumWebBold } from '@/lib/fonts';
 import DataTrackImage from '@/app/assets/screenshots/data_track.png';
 import TeamRankImage from '@/app/assets/screenshots/team_rank.png';
@@ -83,8 +83,8 @@ export const UnderstandDataSection = () => {
             <div className="grid md:grid-cols-3 gap-8">
                 <SectionFeature icon={<BrainCog className="w-6 h-6"/>} title="GPT-4 Summarization"
                                 description="Don’t have time to sift through the dozens of scouter comments on a robot? Use our GPT-4 powered summarizing tool to quickly gain insights on data."/>
-                <SectionFeature icon={<BrainCog className="w-6 h-6"/>} title="Feature Title"
-                                description="Feature Description"/>
+                <SectionFeature icon={<Hourglass className="w-6 h-6"/>} title="Match Prediction"
+                                description="Predict the outcome of matches to help you make strategic decisions before a match even happens."/>
                 <SectionFeature icon={<BrainCog className="w-6 h-6"/>} title="Feature Title"
                                 description="Feature Description"/>
             </div>

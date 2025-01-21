@@ -1,4 +1,4 @@
-import { Cloud, Database, Shield, Smartphone, Wifi } from 'lucide-react';
+import { Cloud, Database, NotebookPen, Shield, Smartphone, Wifi } from 'lucide-react';
 import { titilliumWebBold } from '@/lib/fonts';
 
 const Feature = ({name, description, icon}: {
@@ -29,6 +29,11 @@ const features = [
         icon: <Database className="w-6 h-6"/>
     },
     {
+        name: 'Customizable Forms',
+        description: 'Don\'t wait for the app to update after the season begins! With the in-app form editor, scouting leads can easily create forms to fit their season-specific needs.',
+        icon: <NotebookPen className="w-6 h-6"/>
+    },
+    {
         name: 'Mobile-First',
         description: 'Crush the competition with EagleScout\'s simple yet pleasing UI, providing ease of observation and tracking. With our impeccable mobile compatibility, focus on the match and forget your phone.',
         icon: <Smartphone className="w-6 h-6"/>
@@ -52,7 +57,7 @@ const features = [
 
 export const FeaturesSection = () => {
     return (
-        <section className="container mx-auto px-4 py-24">
+        <section id="features" className="container mx-auto px-4 py-24">
             <h2 className={`${titilliumWebBold.className} text-4xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent`}>
                 EagleScout at a Glance
             </h2>

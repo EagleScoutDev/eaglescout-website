@@ -15,7 +15,7 @@ export const Footer = () => {
                             <span className="text-xl font-bold">EagleScout</span>
                         </Link>
                         <p className="text-gray-400 max-w-sm">
-                            SLOGAN HERE SLOGAN HERE SLOGAN HERE LMAO.
+                            Next-generation scouting for FRC.
                         </p>
                     </div>
                     <div className="col-span-1 md:col-span-2">
@@ -75,8 +75,6 @@ export const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
-                {/* Copyright */}
                 <div className="border-t border-white/10 mt-12 pt-8 text-center text-gray-400 text-sm">
                     © {new Date().getFullYear()} EagleScout. All rights reserved.
                 </div>
