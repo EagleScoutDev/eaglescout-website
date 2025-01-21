@@ -9,7 +9,7 @@ import { UnderstandDataSection } from '@/app/sections/UnderstandDataSection';
 
 export default function Home() {
   return (
-      <div className="min-h-screen bg-black text-white">
+      <div className="min-h-screen bg-black text-white bg-grid-8-s-2-neutral-950">
           <Navbar />
           <Hero />
           <FeaturesSection />
