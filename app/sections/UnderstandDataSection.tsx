@@ -1,8 +1,10 @@
 import Image from 'next/image';
-import AppImage from '@/app/assets/img.png';
 import { SectionFeature } from '@/app/components/SectionFeature';
 import { BrainCog } from 'lucide-react';
 import { titilliumWebBold } from '@/lib/fonts';
+import DataTrackImage from '@/app/assets/screenshots/data_track.png';
+import TeamRankImage from '@/app/assets/screenshots/team_rank.png';
+import PicklistImage from '@/app/assets/screenshots/picklist.png';
 
 export const UnderstandDataSection = () => {
     return (
@@ -14,7 +16,7 @@ export const UnderstandDataSection = () => {
                 <p className="text-xl md:text-2xl text-gray-400">EagleScout empowers you to understand other robots</p>
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-                <div className="order-2 md:order-1 ml-24">
+                <div className="order-2 md:order-1 ml-0 md:ml-24">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">All your data. All in one place.</h3>
                     <p className="text-gray-400 text-lg leading-relaxed">
                         Access comprehensive match data, team statistics, and performance metrics in a single, intuitive
@@ -26,7 +28,7 @@ export const UnderstandDataSection = () => {
                     <div className="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"/>
                     <div className="relative">
                         <Image
-                            src={AppImage}
+                            src={TeamRankImage}
                             alt="Dashboard interface"
                             width={300}
                             className="rounded-3xl shadow-2xl mx-auto"
@@ -39,28 +41,27 @@ export const UnderstandDataSection = () => {
                     <div className="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"/>
                     <div className="relative">
                         <Image
-                            src={AppImage}
+                            src={DataTrackImage}
                             alt="Data tracking interface"
                             width={300}
                             className="rounded-3xl shadow-2xl mx-auto"
                         />
                     </div>
                 </div>
-                <div className="mr-24">
+                <div className="mr-0 md:mr-24">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">Track data points over time</h3>
                     <p className="text-gray-400 text-lg leading-relaxed">
-                        Watch how teams evolve throughout the competition. Our advanced tracking system lets you monitor
-                        key metrics,
-                        identify trends, and spot improvements in real-time, giving you the competitive edge you need.
+                        Watch how teams evolve throughout the competition. Our detailed graphs let you identify trends
+                        and spot improvements in real-time, giving you the competitive edge you need.
                     </p>
                 </div>
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
-                <div className="order-2 md:order-1 ml-24">
+                <div className="order-2 md:order-1 ml-0 md:ml-24">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">Generate picklists with the click of a
                         button</h3>
                     <p className="text-gray-400 text-lg leading-relaxed">
-                        Say goodbye to manual picklist creation. EagleScout&#39;s intelligent algorithm analyzes team
+                        Say goodbye to manual picklist creation. EagleScout allows you to rank teams by
                         performance data and
                         automatically generates optimized picklists, helping you make strategic alliance selections
                         quickly and
@@ -71,7 +72,7 @@ export const UnderstandDataSection = () => {
                     <div className="absolute inset-0 bg-blue-500/20 blur-[100px] rounded-full"/>
                     <div className="relative">
                         <Image
-                            src={AppImage}
+                            src={PicklistImage}
                             alt="Picklist generation interface"
                             width={300}
                             className="rounded-3xl shadow-2xl mx-auto"

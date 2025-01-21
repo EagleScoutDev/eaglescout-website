@@ -2,7 +2,9 @@ import Image from 'next/image';
 import { Battery, Users, Wifi } from 'lucide-react';
 import { SectionFeature } from '@/app/components/SectionFeature';
 import { titilliumWebBold } from '@/lib/fonts';
-import AppImage from '@/app/assets/img.png';
+import DataOverviewImage from '@/app/assets/screenshots/data_overview.png';
+import ReportListImage from '@/app/assets/screenshots/report_list.png';
+import ScoutReportImage from '@/app/assets/screenshots/scout_report.png';
 
 export const MobileFirstSection = () => {
     return (
@@ -18,25 +20,33 @@ export const MobileFirstSection = () => {
                     No cumbersome tablets. No hefty laptops.
                 </p>
             </div>
-            <div className="relative w-full h-[400px] md:h-[500px] mb-20 flex justify-center items-center gap-16">
-                <Image
-                    src={AppImage}
-                    alt="iOS phone mockup"
-                    width={300}
-                    className="rounded-3xl shadow-2xl opacity-75"
-                />
-                <Image
-                    src={AppImage}
-                    alt="iOS phone mockup"
-                    width={300}
-                    className="rounded-3xl shadow-2xl z-10"
-                />
-                <Image
-                    src={AppImage}
-                    alt="iOS phone mockup"
-                    width={300}
-                    className="rounded-3xl shadow-2xl opacity-75"
-                />
+            <div className="gap-6 flex md:relative w-full md:h-[600px] mb-16">
+                <div
+                    className="md:absolute md:left-[35%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:md:z-20">
+                    <Image
+                        src={DataOverviewImage}
+                        alt="Data Overview Image"
+                        width={250}
+                        className="shadow-2xl opacity-75"
+                    />
+                </div>
+                <div
+                    className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:z-30">
+                    <Image src={ScoutReportImage}
+                           alt="Scout Report Image"
+                           width={300}
+                           className="shadow-2xl"
+                    />
+                </div>
+                <div
+                    className="md:absolute md:left-[65%] md:transform md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:z-20">
+                    <Image
+                        src={ReportListImage}
+                        alt="Report List Image"
+                        width={250}
+                        className="shadow-2xl opacity-75"
+                    />
+                </div>
             </div>
             <div className="text-center mb-20">
                 <p className="text-2xl md:text-3xl text-white mb-4">

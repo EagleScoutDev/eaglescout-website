@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import AppImage from '@/app/assets/img.png';
+import TeamOverviewImage from '@/app/assets/screenshots/team_overview.png';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { titilliumWebBold } from '@/lib/fonts';
@@ -12,7 +12,7 @@ export const Hero = () => {
                     <div className="absolute w-[300px] h-[600px] bg-blue-500/20 blur-[100px] rounded-full"/>
                     <div className="relative">
                         <Image
-                            src={AppImage}
+                            src={TeamOverviewImage}
                             alt="EagleScout App Interface"
                             width={300}
                             height={600}
