@@ -3,7 +3,7 @@ import './globals.css';
 import { titilliumWebRegular } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-    title: 'Eaglescout',
+    title: 'EagleScout',
     description: 'Next-generation scouting for FRC',
 };
 
