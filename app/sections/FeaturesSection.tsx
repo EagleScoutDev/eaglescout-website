@@ -58,7 +58,7 @@ const features = [
 export const FeaturesSection = () => {
     return (
         <section id="features" className="container mx-auto px-4 py-24">
-            <h2 className={`${titilliumWebBold.className} text-4xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent`}>
+            <h2 className={`${titilliumWebBold.className} text-4xl md:text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent py-2`}>
                 EagleScout at a Glance
             </h2>
 
