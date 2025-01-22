@@ -3,6 +3,7 @@ import TeamOverviewImage from '@/app/assets/screenshots/team_overview.png';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { titilliumWebBold } from '@/lib/fonts';
+import { ArrowRight } from 'lucide-react';
 
 export const Hero = () => {
     return (
@@ -23,7 +24,7 @@ export const Hero = () => {
                 </div>
 
                 <div className="w-full md:w-1/2 text-center md:text-left">
-                    <h1 className={`${titilliumWebBold.className} text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent`}>
+                    <h1 className={`${titilliumWebBold.className} text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent py-2`}>
                         EagleScout
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 mb-8">Scouting at your fingertips.</p>
@@ -31,7 +32,7 @@ export const Hero = () => {
                         asChild
                         className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-6 text-lg rounded-full"
                     >
-                        <Link href="/get-started">Get Started &gt;</Link>
+                        <Link href="/get-started">Get Started <ArrowRight className="w-6 h-6" /></Link>
                     </Button>
                 </div>
             </div>
